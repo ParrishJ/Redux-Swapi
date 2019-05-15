@@ -1,4 +1,8 @@
 // we'll need axios
+import axios from "axios";
+export const FETCH_CHARS_START = "FETCH_CHARS_START";
+export const FETCH_CHARS_SUCCESS = "FETCH_CHARS_SUCCESS";
+export const FETCH_CHARS_FAILURE = "FETCH_CHARS_FAILURE";
 
 // we'll need to create 3 different action types here.
 // one for fetching, one for success and one for failure
