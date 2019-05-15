@@ -13,10 +13,10 @@ export const getChars = () => dispatch => {
       dispatch({ type: FETCH_CHARS_SUCCESS, payload: res.data.results });
     })
     .catch(err => {
-      console.log(err);
+      console.log("this is the error", err.response);
       dispatch({
         type: FETCH_CHARS_FAILURE,
-        payload: "Error Message"
+        payload: `${err.response.status}`
       });
     });
 };
